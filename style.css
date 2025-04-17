@@ -1,0 +1,139 @@
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+  text-align: center;
+  padding: 1rem;
+  display: flex;   
+  justify-content: center;   
+  align-items: center;   
+  height: 100vh;
+}
+
+#welcome-screen {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 95%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#profile-icon {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 10px rgba(255, 20, 147, 0.5);
+}
+
+#welcome-screen h1 {
+  color: #ff1493;
+}
+
+#welcome-screen button {
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  background: #ff69b4;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+}
+
+#welcome-screen button:hover {
+  background: #ff85c1;
+}
+
+#progress-bar {
+  width: 100%;
+  height: 10px;
+  background: #ffe4f2;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+#progress-fill {
+  height: 100%;
+  width: 0%;
+  background: #ff69b4;
+  transition: width 0.4s ease;
+}
+
+label {
+  display: block;
+  margin: 10px 0;
+}
+
+input[type="radio"] {
+  margin-right: 8px;
+}
+
+.result {
+  font-size: 1.2rem;
+  color: #d63384;
+}
+
+#survey-container {   
+  background: white;   
+  padding: 2rem 2.5rem;   
+  border-radius: 20px;   
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);   
+  max-width: 400px;   
+  text-align: center; } 
+
+h2 {   
+  margin-bottom: 1.5rem;   
+  color: #ff69b4; } 
+
+label {   
+  display: block;   
+  margin: 0.5rem 0;   
+  font-size: 1rem; } 
+
+input[type="radio"] {   
+  margin-right: 0.5rem;   
+  transform: scale(1.2); 
+} 
+
+p { 
+font-size: 1.2rem;   
+margin-top: 1.5rem;   
+color: #5c5c5c; 
+} 
+
+@keyframes fall {
+  0% { transform: translateY(-10vh); }
+  100% { transform: translateY(100vh); }
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Mobile tweaks */
+@media (max-width: 480px) {
+  #profile-icon {
+    width: 80px;
+    height: 80px;
+  }
+
+  .result {
+    font-size: 1rem;
+  }
+
+  #welcome-screen button {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}
